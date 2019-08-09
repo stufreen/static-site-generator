@@ -1,0 +1,16 @@
+// site.json
+{
+  "slug": string,
+  "template": string,
+  "visible": boolean,
+  "meta": Object,
+  "fields": Object,
+  "children": Array,
+}
+
+// config.json
+{
+  "site": string,
+  "templateDir": string,
+  "outputDir": string,
+}

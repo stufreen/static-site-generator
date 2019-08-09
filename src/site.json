@@ -1,0 +1,158 @@
+{
+  "slug": "",
+  "template": "main-page",
+  "visible": true,
+  "meta": {
+    "title": "Main page"
+  },
+  "fields": {
+    "header": "This is my site",
+    "content": "How do you like it?"
+  },
+  "children": [
+    {
+      "slug": "blog",
+      "template": "blog",
+      "visible": true,
+      "meta": {
+        "title": "Blog"
+      },
+      "fields": {
+        "header": "Blog",
+        "content": "This is the blog page"
+      },
+      "children": [
+        {
+          "slug": "post-one",
+          "template": "main-page",
+          "visible": true,
+          "meta": {
+            "title": "Post One"
+          },
+          "fields": {
+            "header": "Post One",
+            "content": "This is the first post"
+          },
+          "children": []
+        },
+        {
+          "slug": "post-two",
+          "template": "main-page",
+          "visible": true,
+          "meta": {
+            "title": "Post Two"
+          },
+          "fields": {
+            "header": "Post Two",
+            "content": "This is the second post"
+          },
+          "children": []
+        },
+        {
+          "slug": "post-3",
+          "template": "main-page",
+          "visible": true,
+          "meta": {
+            "title": "Post Two"
+          },
+          "fields": {
+            "header": "Post Two",
+            "content": "This is the second post"
+          },
+          "children": []
+        },
+        {
+          "slug": "post-4",
+          "template": "main-page",
+          "visible": true,
+          "meta": {
+            "title": "Post Two"
+          },
+          "fields": {
+            "header": "Post Two",
+            "content": "This is the second post"
+          },
+          "children": []
+        },
+        {
+          "slug": "post-5",
+          "template": "main-page",
+          "visible": true,
+          "meta": {
+            "title": "Post Two"
+          },
+          "fields": {
+            "header": "Post Two",
+            "content": "This is the second post"
+          },
+          "children": []
+        },
+        {
+          "slug": "post-6",
+          "template": "main-page",
+          "visible": true,
+          "meta": {
+            "title": "Post Two"
+          },
+          "fields": {
+            "header": "Post Two",
+            "content": "This is the second post"
+          },
+          "children": []
+        },
+        {
+          "slug": "post-7",
+          "template": "main-page",
+          "visible": true,
+          "meta": {
+            "title": "Post Two"
+          },
+          "fields": {
+            "header": "Post Two",
+            "content": "This is the second post"
+          },
+          "children": []
+        },
+        {
+          "slug": "post-8",
+          "template": "main-page",
+          "visible": true,
+          "meta": {
+            "title": "Post Two"
+          },
+          "fields": {
+            "header": "Post Two",
+            "content": "This is the second post"
+          },
+          "children": []
+        },
+        {
+          "slug": "post-9",
+          "template": "main-page",
+          "visible": true,
+          "meta": {
+            "title": "Post Two"
+          },
+          "fields": {
+            "header": "Post Two",
+            "content": "This is the second post"
+          },
+          "children": []
+        },
+        {
+          "slug": "post-10",
+          "template": "main-page",
+          "visible": true,
+          "meta": {
+            "title": "Post Two"
+          },
+          "fields": {
+            "header": "Post Two",
+            "content": "This is the second post"
+          },
+          "children": []
+        }
+      ]
+    }
+  ]
+}
