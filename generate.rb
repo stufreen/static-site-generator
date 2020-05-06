@@ -42,7 +42,13 @@ def compile_page (page, root)
   end
 end
 
+starting = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+
 siteRaw = File.read(CONFIG['site'])
 root = JSON.parse(siteRaw)
 withPath = attach_path(root, '')
 compile_page(root, root)
+
+ending = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+elapsed = (ending - starting) * 1000
+puts "Finished in #{elapsed.round(1)} milliseconds"
