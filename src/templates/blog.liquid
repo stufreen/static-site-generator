@@ -1,0 +1,34 @@
+<html>
+
+<head>
+  <title>{{ meta.title }}</title>
+</head>
+
+<body>
+  <main>
+    <h1>{{ fields.header }}</h1>
+    <div>{{ fields.content }}</div>
+    <ol>
+      {% for child in children %}
+      <a href="{{ child.path }}">
+        <li>{{ child.meta.title }}</li>
+      </a>
+      {% endfor %}
+    </ol>
+  </main>
+
+  <footer>
+    <ul>
+      <a href="{{ root.path }}">
+        <li>Home</li>
+      </a>
+      {% for child in root.children %}
+      <a href="{{ child.path }}">
+        <li>{{ child.meta.title }}</li>
+      </a>
+      {% endfor %}
+    </ul>
+  </footer>
+</body>
+
+</html>
