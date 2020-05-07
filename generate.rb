@@ -8,6 +8,9 @@ CONFIG = {
   'outputDir' => './dist'
 }
 
+template_path = "#{CONFIG['templateDir']}/snippets"
+Liquid::Template.file_system = Liquid::LocalFileSystem.new(template_path) 
+
 def process_template (template, page, root)
   @template = Liquid::Template.parse(template)
   parameters = {
@@ -44,9 +47,9 @@ end
 
 starting = Process.clock_gettime(Process::CLOCK_MONOTONIC)
 
-siteRaw = File.read(CONFIG['site'])
-root = JSON.parse(siteRaw)
-withPath = attach_path(root, '')
+site_raw = File.read(CONFIG['site'])
+root = JSON.parse(site_raw)
+attach_path(root, '')
 compile_page(root, root)
 
 ending = Process.clock_gettime(Process::CLOCK_MONOTONIC)

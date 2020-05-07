@@ -1,0 +1,15 @@
+<ol>
+  {% for rootChild in root.children %}
+  {% if rootChild.slug == "blog" %}
+  {% for child in rootChild.children %}
+  {% if child.slug == slug %}
+  <li>{{ child.meta.title }}</li>
+  {% else %}
+  <a href="{{ child.path }}">
+    <li>{{ child.meta.title }}</li>
+  </a>
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+  {% endfor %}
+</ol>

@@ -1,0 +1,21 @@
+<nav>
+  <ul>
+    {% if slug != root.slug %}
+      <a href="{{ root.path }}">
+        <li>{{ root.meta.title }}</li>
+      </a>
+    {% else %}
+      <li>{{ root.meta.title }}</li>
+    {% endif %}
+    
+    {% for child in root.children %}
+      {% if child['slug'] != slug %}
+        <a href="{{ child.path }}">
+          <li>{{ child.meta.title }}</li>
+        </a>
+      {% else %}
+        <li>{{ child.meta.title }}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>
